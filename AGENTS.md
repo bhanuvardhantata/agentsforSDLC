@@ -6,7 +6,7 @@
 
 **Goal**: Keep this project simple, maintainable, and easy for AI coding agents to follow without breaking the layered architecture.
 
-This repo also includes a GitHub-focused workflow under `.agent/` for agent-based contributions. Use the root `AGENTS.md` as the cross-platform source of truth and the `.agent/workflows/*.md` files as the task-specific workflow guide.
+This repo also includes GitHub custom agents under `.github/agents/` and supporting workflows under `.agent/`. Use the root `AGENTS.md` as the cross-platform source of truth, select the matching custom agent for GitHub work, and then follow `.agent/workflows/*.md` as the task-specific workflow guide.
 
 ## Architecture
 
@@ -72,6 +72,10 @@ npm run format:check  # Check formatting
 Use conventional commits: `feat:`, `fix:`, `chore:`, `docs:`, `style:`, `refactor:`, `test:`
 
 ## Workflow Files
+
+- `.github/agents/full-stack-developer.agent.md` — full-stack feature work
+- `.github/agents/test-engineer.agent.md` — test changes and verification
+- `.github/agents/database-engineer.agent.md` — Prisma and database changes
 
 - `.agent/README.md` — overview of the GitHub agent workflow
 - `.agent/workflows/dev.md` — start app and add features

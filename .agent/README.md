@@ -1,6 +1,12 @@
 # GitHub Agent Guide
 
-This repository includes a GitHub-focused AI workflow under the `.agent` folder. Use these files as the active instruction set when working in this repo through a GitHub-compatible agent experience.
+This repository includes GitHub-compatible custom agents under `.github/agents/` and supporting workflow guidance under the `.agent` folder. Use the custom agent that matches the task; each agent points back to the detailed workflow used by this repository.
+
+## Custom agents
+
+- `.github/agents/full-stack-developer.agent.md` — implement React, Express, and Prisma features
+- `.github/agents/test-engineer.agent.md` — add and run focused Vitest and React Testing Library tests
+- `.github/agents/database-engineer.agent.md` — evolve the Prisma schema, migrations, seed data, and API layer
 
 ## Workflow files
 
@@ -10,7 +16,7 @@ This repository includes a GitHub-focused AI workflow under the `.agent` folder.
 
 ## Source of truth
 
-The root `AGENTS.md` file remains the repo-level compatibility guide for cross-platform AI tools. For GitHub agent workflows, prefer the files in `.agent/` and the commands in `package.json`.
+The root `AGENTS.md` file remains the repo-level compatibility guide for cross-platform AI tools. For GitHub agent workflows, prefer the custom agent prompt for the task, then use the detailed workflow files in `.agent/workflows/` and the commands in `package.json`.
 
 ## Project conventions
 
